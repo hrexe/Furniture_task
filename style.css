@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Madimi+One&family=Noto+Sans+Khojki&family=Ojuju:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Madimi One", sans-serif;
+}
+
+header{
+    background-color: burlywood;
+    padding: 0.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   position: sticky;
+    width: 100%;
+}
+.head1 {
+    width: 25%;
+    position: relative;
+    transition: 0.5s;
+}
+.head1 img{
+    width: 60px;
+    height: 60px;
+}
+.head1 p{
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    font-size: 20px;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0px 2px 7px rgba(0,0,0,1);
+}
+
+.head1:hover p {
+    color: #000;
+    text-shadow: 0px 2px 7px rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.head2{
+    width: 50%;
+}
+.head2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head2 ul li a {
+    color: #fff;
+    text-shadow: 0px 2px 7px rgba(0,0,0,1);
+    transition: 0.5s;
+}
+.head2 ul li img{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.head2 ul li a:hover {
+    color: aqua;
+    color: #000;
+    text-shadow: 0px 2px 7px rgb(255, 255, 255);
+}
+
+
+.head3{
+    width: 25%;
+    text-align: right;
+    position: relative;
+}
+
+.head3 img{
+    position: absolute;
+    top: 62px;
+    right: -40px;
+    width: 120px;
+    height: 120px;
+    
+}
+.head3 i{
+    font-size: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+
+
+.home {
+    background: linear-gradient(61deg, rgba(0, 0, 0, 0.481) 0%, rgba(1, 1, 1, 0.6699929971988796) 100%), url(./img/birinci.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    
+
+}
+.text {
+    padding: 30vh 0 ;
+    text-align: center;
+}
+
+.home .text h1 {
+    font-size: 50px;
+    color: burlywood;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+.home .text p {
+    margin-top: 30px;
+    color: burlywood;
+    font-style: italic;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+.products {
+    padding: 20px 50px;
+    text-align: center;
+    background-color: #e2e1df;
+}
+
+.pro-text h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #ab8c62;
+    margin-top: 20px;
+}
+
+.pro-text p {
+    color: #deb887;
+}
+
+.cards {
+    text-align: center;
+    align-items: center;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.cards .card {
+    width: 20%;
+    margin: 15px;
+    border: 1px solid burlywood;
+    border-radius: 15px;
+    transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+}
+
+.cards .card .top img{
+    width: 100%;
+    height: 250px;
+   
+}
+.cards .card:hover {
+    box-shadow: 1px 0px 5px 7px #deb887;
+    -webkit-box-shadow: 1px 0px 5px 7px #deb887;
+    -moz-box-shadow: 1px 0px 5px 7px #deb887; 
+}
+
+.cards .card .bottom {
+    padding: 20px;
+}
+.cards .card .top i {
+   position: absolute;
+    padding: 5px;
+    background-color: burlywood;
+    color: #000;
+    border-radius: 50%;
+   top: 10px;
+    right: 10px;
+    transition: 0.2s;
+    
+}
+
+.cards .card .top h2 {
+    color: rgb(176, 144, 102);
+    letter-spacing: 1px;
+}
+.cards .card .top i:hover {
+    color: red;
+    box-shadow: 1px 0px 5px 7px rgba(255,0,0,0.75);
+-webkit-box-shadow: 1px 0px 5px 7px rgba(255,0,0,0.75);
+-moz-box-shadow: 1px 0px 5px 7px rgba(255,0,0,0.75); 
+}
+
+.cards .card .bottom {
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+
+.cards .card .bottom button {
+    padding: 5px 25px;
+    font-size: 20px;
+    color: burlywood;
+    background-color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cards .card .bottom p {
+    color: #000;
+    transition: 0.2s;
+    cursor:default;
+}
+
+.cards .card .bottom p:hover {
+    color: burlywood;
+    text-decoration: underline;
+}
+
+.card hr {
+    margin-top: 15px;
+    background-color: #deb887;
+}
+
+.avropa {
+    background: linear-gradient(61deg, rgba(0, 0, 0, 0.481) 0%, rgba(1, 1, 1, 0.6699929971988796) 100%), url("https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
+    padding: 40vh;
+}
+
+.avropa h1 {
+    color: #deb887;
+    font-size: 50px;
+}
+
+.avropa p {
+    color: #deb887;
+}
+
+.about {
+  
+    padding: 30px 60px;
+}
+
+.about .cont {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.about .cont .box1 {
+    width: 50%;
+}
+
+.box1  {
+    justify-content: left;
+    width: 60%;
+    position: relative;
+}
+
+.box1 h1 {
+    font-size: 50px;
+    color: #ab8c62;
+}
+
+.box1 p {
+    z-index: -1;
+    font-style: italic  ;
+}
+
+.about .cont .box1 .cil1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50px;
+    left: -19px;
+    z-index: -1;
+}
+.about .cont .box1 .cil2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 49px;
+    left: 80px;
+    z-index: -1;
+
+}
+
+.box2 {
+    width: 40%;
+    position: relative;
+}
+
+.box2 img {
+    width: 400px;
+    height: 400px;
+}
+
+.box2 #angleleft {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 2px 12px rgba(0,0,0,0.72);
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.box2 #angleright {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 2px 12px rgba(0,0,0,0.72);
+    position: absolute;
+    top: 50%;
+    right: 170px;
+}
